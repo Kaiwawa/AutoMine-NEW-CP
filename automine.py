@@ -69,7 +69,7 @@ root.mainloop()
 # print(getValueX)
 # print(getValueY)
 
-# POS SAVE
+# POS SAVE 1920x1080
 # Profile 1222 975
 # Puffle Tricks 539 967
 # Puffle Bag 534 874
