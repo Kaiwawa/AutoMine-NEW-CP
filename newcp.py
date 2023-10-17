@@ -1,27 +1,61 @@
 from random import randint
 from pyautogui import leftClick, press
 from time import sleep
+from tkinter import *
+import threading
 
-def PetBag():
-    leftClick(534, 970),
-    sleep(0.3),
-    leftClick(534, 875)
 
-def Mine():
-    getValueX = randint(787, 1144)
-    getValueY = randint(751, 881)
-    leftClick(getValueX, getValueY)
-    sleep(2)
-    press("d")
+class Run:
+    def __init__(self):
+        self.running = False
 
-sleep(3)
+    def loop(self):
+        while self.running:
+            leftClick(534, 970)
+            sleep(0.3)
+            leftClick(534, 875)
 
-while True:
+            getValueX = randint(787, 1144)
+            getValueY = randint(751, 881)
+            leftClick(getValueX, getValueY)
+            sleep(2)
+            press("d")
 
-    Mine()
-    PetBag()
-    sleep(120)
-    PetBag()
+            sleep(120)
+
+    def on(self):
+        if not self.running:
+            self.running = True
+            self.thread = threading.Thread(target=self.loop)
+            self.thread.start()
+
+    def off(self):
+        self.running = False
+
+
+root = Tk()
+root.title("New CP Auto Mine")
+root.geometry("500x300")
+
+root.iconbitmap('icon.ico')
+
+label = Label(root, text="CP Auto Mine", fg="Black", font=("Arial", 32))
+label.pack()
+
+intro_label = Label(root, text="Click Start or Stop", font=('Calibri', 13))
+intro_label.pack()
+
+app = Run()
+
+start = Button(root, text="Start", command=app.on)
+start.pack(pady=50)
+
+stop = Button(root, text="Stop", command=app.off)
+stop.pack(padx=10)
+
+root.attributes("-topmost", True)  # Keep the window on top
+
+root.mainloop()
 
 # PRINT SAVE
 # print(pyautogui.position())
