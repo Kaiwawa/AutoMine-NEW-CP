@@ -4,5 +4,5 @@
 >**If you don't use 1920x1080, you will have to manually change the code for now. :(**
 >
 >
->Download the latest version  
+>To download the latest version:  
 >[Download](https://github.com/Kaiwawa/AutoMine-NEW-CP/archive/refs/tags/latest.zip)
