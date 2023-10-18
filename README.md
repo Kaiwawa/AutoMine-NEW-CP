@@ -4,5 +4,5 @@
 >**If you don't use 1920x1080, you will have to manually change the code for now. :(**
 >
 >
->To download the latest version:  
->[Download](https://github.com/Kaiwawa/AutoMine-NEW-CP/releases)
+>Download 'icon.ico' and 'automine.exe' on the releases page:  
+>[Releases](https://github.com/Kaiwawa/AutoMine-NEW-CP/releases)
