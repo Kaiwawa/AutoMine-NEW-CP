@@ -5,7 +5,7 @@
 
 
 # Download and Install
->1 - Download 'icon.ico' and 'automine.exe' from the [releases](https://github.com/Kaiwawa/AutoMine-NEW-CP/releases) page  
+>1 - Download 'icon.ico' and 'automine.exe' from the [releases](https://github.com/Kaiwawa/AutoMine-NEW-CP/releases) page.  
 >2 - Put them toghether in a folder and run the 'automine.exe'.  
 >3 - Press start and enjoy a fun afk farm.  
 
