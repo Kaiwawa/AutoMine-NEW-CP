@@ -5,4 +5,4 @@
 >
 >
 >To download the latest version:  
->[Download](https://github.com/Kaiwawa/AutoMine-NEW-CP/archive/refs/tags/latest.zip)
+>[Download](https://github.com/Kaiwawa/AutoMine-NEW-CP/releases)
